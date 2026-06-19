@@ -19,7 +19,7 @@ class BrainscapeApp extends StatelessWidget {
         title: AppStrings.appName,
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
-        initialRoute: AppRoutes.welcome,
+        initialRoute: AppRoutes.root,
         onGenerateRoute: AppRoutes.onGenerateRoute,
       ),
     );

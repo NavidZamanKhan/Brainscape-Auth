@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../features/auth/presentation/auth_gate.dart';
 import '../features/quiz/presentation/screens/quiz_screen.dart';
 import '../features/quiz/presentation/screens/result_screen.dart';
 import '../features/quiz/presentation/screens/welcome_screen.dart';
@@ -8,7 +9,8 @@ import '../features/quiz/presentation/screens/welcome_screen.dart';
 class AppRoutes {
   AppRoutes._();
 
-  static const String welcome = '/';
+  static const String root = '/';
+  static const String quizWelcome = '/quiz-welcome';
   static const String quiz = '/quiz';
   static const String result = '/result';
 
@@ -18,11 +20,14 @@ class AppRoutes {
         return _buildRoute(const QuizScreen(), settings);
       case result:
         return _buildRoute(const ResultScreen(), settings);
-      case welcome:
-      default:
+      case quizWelcome:
         return _buildRoute(const WelcomeScreen(), settings);
+      case root:
+      default:
+        return _buildRoute(const AuthGate(), settings);
     }
   }
+
 
   static PageRouteBuilder _buildRoute(Widget page, RouteSettings settings) {
     return PageRouteBuilder(

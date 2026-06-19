@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "504972990838",
+    "project_id": "brainscape-1126c",
+    "storage_bucket": "brainscape-1126c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504972990838:android:b58c7217273e06a6c4c257",
+        "android_client_info": {
+          "package_name": "com.example.brainscape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfrsvQTRFoffkJRz_Ito9Jd_TCNzhvBCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
